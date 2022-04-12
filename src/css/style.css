@@ -1,0 +1,59 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.contact {
+  background: url(../assets/img/receta_01.jpg) no-repeat;
+  background-size: 100% 100%;
+  height: 100vh;
+  width: 100%;
+}
+
+.head {
+  background-color: grey;
+  border-radius: 5px;
+  margin-top: -40px;
+}
+
+.effect {
+  border: 0;
+  outline: none;
+  width: 100%;
+  padding: 7px 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.effect ~ .Focus-border {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background-color: rgb(199, 8, 8);
+  transition: 0.4s;
+}
+
+.effect:focus ~ .Focus-border {
+  width: 100%;
+  transition: 0.4s;
+  left: 0;
+}
+
+.btn {
+  background: rgb(199, 8, 8);
+  color: white;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  height: 40px;
+  width: 145px;
+}
+
+.swal-button {
+  padding: 7px 19px;
+  border-radius: 2px;
+  background-color: rgb(199, 8, 8);
+  font-size: 14px;
+  border-radius: 5px;
+}
